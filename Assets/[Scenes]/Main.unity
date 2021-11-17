@@ -358,7 +358,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2057940562}
-  - {fileID: 874435714}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -406,67 +405,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45977bbae16431c46a013576a1aea384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &478221305
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 232455667}
-    m_Modifications:
-    - target: {fileID: 6051814276866247881, guid: 0910096de5f25904797c451138093836, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6051814276866247881, guid: 0910096de5f25904797c451138093836, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 18.38
-      objectReference: {fileID: 0}
-    - target: {fileID: 6051814276866247881, guid: 0910096de5f25904797c451138093836, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.71
-      objectReference: {fileID: 0}
-    - target: {fileID: 6051814276866247881, guid: 0910096de5f25904797c451138093836, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6051814276866247881, guid: 0910096de5f25904797c451138093836, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6051814276866247881, guid: 0910096de5f25904797c451138093836, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6051814276866247881, guid: 0910096de5f25904797c451138093836, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6051814276866247881, guid: 0910096de5f25904797c451138093836, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6051814276866247881, guid: 0910096de5f25904797c451138093836, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6051814276866247881, guid: 0910096de5f25904797c451138093836, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6051814276866247881, guid: 0910096de5f25904797c451138093836, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6051814276866247882, guid: 0910096de5f25904797c451138093836, type: 3}
-      propertyPath: groundLayerMask.m_Bits
-      value: 64
-      objectReference: {fileID: 0}
-    - target: {fileID: 6051814276866247884, guid: 0910096de5f25904797c451138093836, type: 3}
-      propertyPath: m_Name
-      value: Enemy (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0910096de5f25904797c451138093836, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3282,11 +3220,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a8a05de0ac134f4f9d01bef6b9da077, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &874435714 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6051814276866247881, guid: 0910096de5f25904797c451138093836, type: 3}
-  m_PrefabInstance: {fileID: 478221305}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &994223901
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -110230,18 +110163,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 232455667}
     m_Modifications:
-    - target: {fileID: 2374573281400095989, guid: 0910096de5f25904797c451138093836, type: 3}
-      propertyPath: contactFilter.useTriggers
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2374573281400095989, guid: 0910096de5f25904797c451138093836, type: 3}
-      propertyPath: contactFilter.useLayerMask
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2374573281400095989, guid: 0910096de5f25904797c451138093836, type: 3}
-      propertyPath: contactFilter.layerMask.m_Bits
-      value: 256
-      objectReference: {fileID: 0}
     - target: {fileID: 6051814276866247881, guid: 0910096de5f25904797c451138093836, type: 3}
       propertyPath: m_RootOrder
       value: 0

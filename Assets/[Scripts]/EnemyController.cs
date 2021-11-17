@@ -28,6 +28,7 @@ public class EnemyController : MonoBehaviour
     public bool hasLOS = false;
 
     private float currentDirection = -1.0f;
+    
 
     void Start()
     {
@@ -89,11 +90,11 @@ public class EnemyController : MonoBehaviour
             {
                 if (collider.gameObject.CompareTag("Player"))
                 {
-                    RaycastHit2D result = Physics2D.Raycast(transform.position, collider.transform.position, Mathf.Infinity, LayerMask.GetMask("Platform", "Wall"));
+                    Vector3 dist = collider.transform.position - transform.position;
+                    RaycastHit2D result = Physics2D.Raycast(transform.position, dist.normalized, dist.magnitude, LayerMask.GetMask("Platform", "Wall"));
 
                     if (result.collider == null)
                     {
-                        Debug.Log("Has los!");
                         hasLOS = true;
 
                         return;
@@ -158,5 +159,19 @@ public class EnemyController : MonoBehaviour
         Gizmos.DrawLine(transform.position, lookInFront.position);
 
         Gizmos.DrawWireSphere(groundOrigin.position, groundRadius);
+
+        if (GameManager.Instance != null)
+        {
+            if (hasLOS)
+            {
+                Gizmos.color = Color.green;
+                Gizmos.DrawLine(transform.position, GameManager.Instance.Player.transform.position);
+            }
+            else
+            {
+                Gizmos.color = Color.red;
+                Gizmos.DrawLine(transform.position, GameManager.Instance.Player.transform.position);
+            }
+        }
     }
 }
